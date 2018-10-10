@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Machine Learning Lab - University of Trieste, 
+ * Copyright (C) 2018 Machine Learning Lab - University of Trieste, 
  * Italy (http://machinelearning.inginf.units.it/)  
  *
  * This program is free software: you can redistribute it and/or modify
