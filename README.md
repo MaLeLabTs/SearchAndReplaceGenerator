@@ -1,6 +1,6 @@
 # SearchAndReplaceGenerator
 
- This project is the accompanying code of "Automatic Search-and-Replace from Examples with Coevolutionary Genetic Programming"
+ This repository provides the accompanying code of "Automatic Search-and-Replace from Examples with Coevolutionary Genetic Programming"
 
 This project contains the source code of a tool for generating Search-and-Replace (SR) expressions:
 
@@ -14,7 +14,7 @@ SearchAndReplaceGenerator was developed at the [Machine Learning Lab, University
 
 We are preparing a wiki to provide installation walkthrough and a brief guide.
 
-The provided engine is a developement release (1) that extends the work in our previous articles (2) to cope with the SR generation problem:
+The provided engine is a developement release(1) that extends the work in our previous articles(2):
 
 * Bartoli, De Lorenzo, Medvet, Tarlao, Inference of Regular Expressions for Text Extraction from Examples, IEEE Transactions on Knowledge and Data Engineering, 2016
 * Bartoli, De Lorenzo, Medvet, Tarlao, Can a machine replace humans in building regular expressions? A case study, IEEE Intelligent Systems, 2016
