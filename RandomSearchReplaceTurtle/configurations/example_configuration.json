@@ -1,0 +1,147 @@
+{
+    "initialSeed": 0, 
+    "strategyParameters": {
+        "threads": "2","tournamentSize": "5", 
+        "runStrategy": "it.units.inginf.male.strategy.impl.CoevolutionaryStrategyFix4"
+    }, 
+    "datasetName": "Replace Phone", 
+    "jobs": 4, 
+    "configName": "Example Configuration", 
+    "strategyClass": "it.units.inginf.male.strategy.impl.MultithreadStrategy", 
+    "resultsGenerationSamplingInterval": 10000, 
+    "bestSelectorClass": "it.units.inginf.male.selections.best.BasicLearningBestSelector", 
+    "jobId": 0, 
+    "outputFolderName": "results/example/phone_25/", 
+    "datasetContainer": {
+        "training": [
+            {
+                "endIndex": "24", 
+                "startIndex": "0"
+            }
+        ], 
+        "dataSetStriped": false, 
+        "testing": [
+            {
+                "endIndex": "250", 
+                "startIndex": "50"
+            }
+        ], 
+        "datasetStripeMarginSize": 2147483647.0, 
+        "path": "dataset/small_replace_phone.csv", 
+        "validation": [
+            {
+                "endIndex": "49", 
+                "startIndex": "25"
+            }
+        ], 
+        "normalProposedDatasetInterval": 0
+    }, 
+    "postprocessorClass": "it.units.inginf.male.postprocessing.Json2Postprocessor", 
+    "objectiveClass": "it.units.inginf.male.objective.EditSearchRecallComplexityCachedObjective", 
+    "evaluatorClass": "it.units.inginf.male.evaluators.DefaultReplaceEvaluatorFix", 
+    "forestBuilderClass": "it.units.inginf.male.coevolution.GroupBasedForestBuilder", "forestBuilderParameters": {
+        "numRounds": "1"
+    }, 
+    "generations": 30, 
+    "configurations": [
+        {
+            "populationBuilderClass": "it.units.inginf.male.generations.SearchWithGroupsPopulationBuilder", 
+            "operators": [
+                "it.units.inginf.male.tree.operator.Group", 
+                "it.units.inginf.male.tree.operator.NonCapturingGroup", 
+                "it.units.inginf.male.tree.operator.ListMatch", 
+                "it.units.inginf.male.tree.operator.ListNotMatch", 
+                "it.units.inginf.male.tree.operator.MatchOneOrMore", 
+                "it.units.inginf.male.tree.operator.MatchZeroOrMore", 
+                "it.units.inginf.male.tree.operator.MatchZeroOrOne", 
+                "it.units.inginf.male.tree.operator.MatchMinMax", 
+                "it.units.inginf.male.tree.operator.PositiveLookbehind", 
+                "it.units.inginf.male.tree.operator.NegativeLookbehind", 
+                "it.units.inginf.male.tree.operator.PositiveLookahead", 
+                "it.units.inginf.male.tree.operator.NegativeLookahead"
+            ], 
+            "terminalSetBuilderClass": "it.units.inginf.male.terminalsets.SmallSearchTerminalSetBuilder", 
+            "ranges": [
+                "a-z", 
+                "A-Z"
+            ], 
+            "evolutionParameters": {
+                "rootCrossoverSelectionProbability": 0.0, 
+                "crossoverProbability": 0.80000000000000004, 
+                "mutationPobability": 0.10000000000000001, 
+                "elitarism": 1, 
+                "leafCrossoverSelectionProbability": 0.10000000000000001, 
+                "nodeCrossoverSelectionProbability": 0.90000000000000002, 
+                "maxDepthAfterCrossover": 15, 
+                "maxCreationDepth": 7, 
+                "populationSize": 500
+            }, 
+            "constants": [
+                "\\d", 
+                "\\w", 
+                "0", 
+                "1", 
+                "2", 
+                "3", 
+                "4", 
+                "5", 
+                "6", 
+                "7", 
+                "8", 
+                "9", 
+                "\\.", 
+                ":", 
+                ",", 
+                ";", 
+                "_", 
+                "=", 
+                "\"", 
+                "'", 
+                "\\\\", 
+                "/", 
+                "\\?", 
+                "\\!", 
+                "\\}", 
+                "\\{", 
+                "\\(", 
+                "\\)", 
+                "\\[", 
+                "\\]", 
+                "<", 
+                ">", 
+                "@", 
+                "#", 
+                " "
+            ]
+        }, 
+        {
+            "populationBuilderClass": "it.units.inginf.male.generations.ReplaceWithGroupsPopulationBuilder", 
+            "operators": [], 
+            "terminalSetBuilderClass": "it.units.inginf.male.terminalsets.SmallReplacementTerminalSetBuilder", 
+            "ranges": [], 
+            "evolutionParameters": {
+                "rootCrossoverSelectionProbability": 0.0, 
+                "crossoverProbability": 0.80000000000000004, 
+                "mutationPobability": 0.10000000000000001, 
+                "elitarism": 1, 
+                "leafCrossoverSelectionProbability": 0.10000000000000001, 
+                "nodeCrossoverSelectionProbability": 0.90000000000000002, 
+                "maxDepthAfterCrossover": 15, 
+                "maxCreationDepth": 5, 
+                "populationSize": 250
+            }, 
+            "constants": [
+                "$0", 
+                "$1", 
+                "$2", 
+                "$3", 
+                "$4", 
+                "$5", 
+                "$6", 
+                "$7", 
+                "$8", 
+                "$9"
+            ]
+        }
+    ]
+}
