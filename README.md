@@ -14,7 +14,7 @@ SearchAndReplaceGenerator was developed at the [Machine Learning Lab, University
 
 We are preparing a wiki to provide installation walkthrough and a brief guide.
 
-The provided engine is a developement release(1) that extends the work in our previous articles(2):
+The provided engine is a developement-research release(1) that extends the work in our previous articles(2):
 
 * Bartoli, De Lorenzo, Medvet, Tarlao, Inference of Regular Expressions for Text Extraction from Examples, IEEE Transactions on Knowledge and Data Engineering, 2016
 * Bartoli, De Lorenzo, Medvet, Tarlao, Can a machine replace humans in building regular expressions? A case study, IEEE Intelligent Systems, 2016
@@ -42,7 +42,7 @@ Machine Learning Lab, [Twitter account](https://twitter.com/MaleLabTs)
 
 ---
 
-(1) This is a developement release--very experimental--, this is not intended to be a "production ready" release but is a tool for experimental assessment, 
+(1) This is a developement release--very experimental for research purposes--, this is not intended to be a "production ready" release but is a tool for experimental assessment, 
 for this reason the code may include unused classes and code documentation is partial.
 
 (2) BibTeX format:
