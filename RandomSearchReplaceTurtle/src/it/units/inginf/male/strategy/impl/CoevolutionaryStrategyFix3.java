@@ -45,7 +45,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /**
  * In case of re-start of all the experiment, YOU HAVE to set the stopSignal
  * variable to default FALSE!! This is not going to be automatically reset to
- * FALSE at experiment stop. Created by fabiano on 18/11/16.
+ * FALSE at experiment stop. Created by Fabiano on 18/11/16.
  */
 public class CoevolutionaryStrategyFix3 implements RunStrategy {
 
