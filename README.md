@@ -12,7 +12,7 @@ SR expressions are pairs of one search expression (regular expression) and one r
 
 SearchAndReplaceGenerator was developed at the [Machine Learning Lab, University of Trieste, Italy](http://machinelearning.inginf.units.it).
 
-We are preparing a wiki to provide installation walkthrough and a brief guide.
+Here is a [wiki](https://github.com/MaLeLabTs/SearchAndReplaceGenerator/wiki) with installation walkthrough and a brief guide.
 
 The provided engine is a developement-research release(1) that extends the work in our previous articles(2):
 
