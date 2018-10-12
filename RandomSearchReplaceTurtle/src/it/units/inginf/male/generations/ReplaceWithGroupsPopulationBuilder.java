@@ -61,7 +61,8 @@ public class ReplaceWithGroupsPopulationBuilder implements InitialPopulationBuil
         Set<MappingOperation> phrases = new HashSet<>();
         List<Node> newPopulation = new LinkedList<>();
         DataSetReplace dataSet = usedTrainingDataset;
-
+        
+        newPopulation.add(new Constant(""));
         
         for (ExampleReplace example : dataSet.getExamples()) {
             Pair<String, String> findChangedZone = example.getChangedBeforeAndAfter();
@@ -81,7 +82,7 @@ public class ReplaceWithGroupsPopulationBuilder implements InitialPopulationBuil
 
         List<MappingOperation> uniquePhrases = new ArrayList<>(phrases);
 
-        int counter = 0;
+        int counter = 1;
         for (MappingOperation node : uniquePhrases) {
             newPopulation.add(createGroupedReplaceExample(node));
             counter++;
