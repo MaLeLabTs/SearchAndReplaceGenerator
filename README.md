@@ -8,7 +8,7 @@ This project contains the source code of a tool for generating Search-and-Replac
 2. based only on examples of the desired behavior,
 3. without any external hint about how the target search and replace should look like.
 
-SR expressions are pairs of one search expression (regular expression) and one replace expression, they are used to automatize text manipulation tasks.
+SR expressions are pairs of one search pattern (regular expression) and one replace expression, they are used to automatize text manipulation tasks.
 
 SearchAndReplaceGenerator was developed at the [Machine Learning Lab, University of Trieste, Italy](http://machinelearning.inginf.units.it).
 
@@ -31,7 +31,7 @@ modifications.
 
 The SearchAndReplaceGenerator project is organized in two NetBeans Java subprojects:
 
-* MaleRegexTurtle:       provides the search(regular expression) and replace trees representation
+* MaleRegexTurtle:       provides the search pattern(regular expression) and replace expression trees representation
 * RandomSearchReplaceTurtle:     GP search engine 
 
 ## Other Links
