@@ -36,7 +36,7 @@ The SearchAndReplaceGenerator project is organized in two NetBeans Java subproje
 
 ## Other Links
 
-Machine Learning Lab, [Twitter account](https://twitter.com/MaleLabTs)
+[Twitter account](https://twitter.com/MaleLabTs) of Machine Learning Lab.
 
 
 
